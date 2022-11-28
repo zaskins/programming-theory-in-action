@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cylinder : Shape
+public class Cylinder : Shape// INHERITANCE
 {
     // Start is called before the first frame update
     void Start()
@@ -14,11 +14,11 @@ public class Cylinder : Shape
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
-            HandleClick();
+            HandleClick();// ABSTRACTION
         }   
     }
 
-    public override void DisplayStats(){
+    public override void DisplayStats(){ // POLYMORPHISM
         Debug.Log("This "+color+" "+shape+" is really cool");
     }
 }

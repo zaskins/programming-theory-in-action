@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Shape : MonoBehaviour
 {
-    public string color {get; set;}
-    public string shape {get; set;}
+    public string color {get; set;} // ENCAPSULATION
+    public string shape {get; set;} // ENCAPSULATION
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class Shape : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
-            HandleClick();
+            HandleClick();// ABSTRACTION
         }   
     }
 
